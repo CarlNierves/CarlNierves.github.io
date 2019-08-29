@@ -9,8 +9,10 @@ $(document).ready(function () {
 		$('.top-nav').removeClass('open');
 	});
 
-
 	$('nav a[href*="#"]').on('click', function(){
+		$('menu-toggler').removeClass('open');
+		$('.top-nav').removeClass('open');
+		console.log("removed");
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top - 100
 		}, 2000);
