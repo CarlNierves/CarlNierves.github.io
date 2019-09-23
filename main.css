@@ -286,7 +286,7 @@ li{
 
 .social-media i{
 	font-size: 5rem;
-	transition: color 650ms;
+	transition: 650ms;
 	color: #494949;
 	margin-top: 5rem;
 	align-content: left;
@@ -304,6 +304,10 @@ li{
 	background: linear-gradient(to top, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin:hover {
+	color: #0077B5;
 }
 /*End about*/
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
 <!-- 			<h1>Carl Nierves</h1>-->
 			<div class="sub-text">
 				<h6 class="start-half">UI | UX Designer</h6>
-				<h6 class="end-half">Web  Developer</h6> 
+				<h6 class="end-half">Web  Developer</h6>
 			</div>
 		</div>
 	</header>
@@ -53,10 +54,10 @@
 					<h6>myself</h6>
 				</div>
 				<p>
-					Fresh graduate with a bachelor's degree in Information Communications Technology, 
+					Fresh graduate with a bachelor's degree in Information Communications Technology,
 					<br><br>
-					I started learning C++ in 2014 and transitioned into web application development in 2015 with asp, later into php 
-					<br> and 
+					I started learning C++ in 2014 and transitioned into web application development in 2015 with asp, later into php
+					<br> and
 					web design till present.
 					<br><br>
 					Loves gaming and an anime enthusiast. ヽ(・∀・)ﾉ
@@ -78,6 +79,11 @@
 								<i class="fab fa-instagram"></i>
 							</a>
 						</li>
+            <li>
+              <a href="https://www.linkedin.com/in/carl-christian-nierves-976993117/"  target="_blank" class="icon-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
 					</ul>
 				</div>
 			</div>
@@ -89,12 +95,10 @@
 			<div class="section-heading" data-aos="fade-in" data-aos-delay="200">
 				<h1 class="service-start">Sk</h1>
 				<h1 class="service-end">ill</h1>
-
 				<div class="sub-section-heading">
 					<h6 class="sub-service-start">What I </h6>
 					<h6 class="sub-service-end"> can do</h6>
 				</div>
-
 			</div>
 			<div class="my-skills">
 				<div class="skill" data-aos="fade-in" data-aos-delay="300">
@@ -157,7 +161,7 @@
  				<a href="#" class="cta">View Details</a>
 			</div>
 			<div class="portfolio-img has margin-right" data-aos="fade-right" data-aos-delay="300">
-				<img src="images/Frame.png" alt="mobile ux">
+				<img src="images/frame.png" alt="mobile ux">
 			</div>
 		</div>
 		<div class="portfolio-item">
@@ -205,14 +209,14 @@
 					<h6 class="sub-service-end">together</h6>
 				</div>
 			</div>
-			<form action="" data-aos="fade-up" data-aos-delay="300">
+			<form action="mail.php" method="post" data-aos="fade-up" data-aos-delay="300">
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" value="This doesn't work yet!">
+				<input type="text" id="name" name="name" required>
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" value="This doesn't work yet!">
+				<input type="email" id="email" name="email" required>
 				<label for="textarea">Text</label>
-				<textarea type="text" id="textarea" rows="9" name="textarea" value="This doesn't work yet!"></textarea>
-				<input type="submit" name="submit-btn" value="Submit">
+				<textarea type="text" id="body" rows="9" name="body"></textarea>
+				<input type="submit" id="submit" name="submit" value="Submit">
 			</form>
 		</div>
 	</section>
@@ -227,3 +231,10 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+<?php
+if(!empty($_GET['message'])) {
+  $message = $_GET['message'];
+  echo "<script type='text/javascript'>alert('$message');</script>";
+}
+?>
