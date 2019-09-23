@@ -79,11 +79,11 @@
 								<i class="fab fa-instagram"></i>
 							</a>
 						</li>
-            <li>
-              <a href="https://www.linkedin.com/in/carl-christian-nierves-976993117/"  target="_blank" class="icon-link">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
+			            <li>
+			              <a href="https://www.linkedin.com/in/carl-christian-nierves-976993117/"  target="_blank" class="icon-link">
+			                <i class="fab fa-linkedin"></i>
+			              </a>
+			            </li>
 					</ul>
 				</div>
 			</div>
